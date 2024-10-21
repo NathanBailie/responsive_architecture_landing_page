@@ -1,5 +1,5 @@
 /* DEPENDENCIES */
-import browserSync, { stream } from 'browser-sync'; // inject code to all devices
+import browserSync from 'browser-sync'; // inject code to all devices
 import gulp from 'gulp'; // gulp core
 import autoprefixer from 'gulp-autoprefixer'; // sets missing browser prefixes
 import clean from 'gulp-clean'; // remove files and folders
@@ -7,12 +7,12 @@ import cleanCSS from 'gulp-clean-css'; // minify CSS files
 import htmlmin from 'gulp-htmlmin'; // minify HTML files
 import gulpif from 'gulp-if'; // conditionally run a task
 import imagemin from 'gulp-imagemin'; // minify images
-import dartSass from 'sass';
 import gulpSass from 'gulp-sass'; // sass compiler
 import terser from 'gulp-terser'; // minify JavaScript files
 import useref from 'gulp-useref'; // parse build blocks in HTML files
 import spritesmith from 'gulp.spritesmith'; // create sprites
 import pngquant from 'imagemin-pngquant'; // minify png-format images
+import dartSass from 'sass';
 
 const { series, parallel, src, dest, watch } = gulp;
 const sass = gulpSass(dartSass);
@@ -20,7 +20,10 @@ const sass = gulpSass(dartSass);
 /* BROWSERSYNC (LOCAL SERVER) */
 function serve() {
 	browserSync.init({
-		server: { baseDir: './src/' }, // base dir
+		server: {
+			baseDir: './src/', // base dir
+		},
+		notify: false, // disable notification
 	});
 }
 

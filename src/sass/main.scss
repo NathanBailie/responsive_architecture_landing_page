@@ -3,15 +3,21 @@
 @use "./libs/normalize.min.css" as *;
 
 // sections
-// @use "sections/" as *;
+@use "sections/header/header.scss" as *;
+@use "sections/header/hamburger.scss" as *;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.ttf');
+}
 
 * {
-  font-family: '', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: rgb(217, 210, 160);
+  background: rgb(32, 31, 27);
 }

@@ -1,0 +1,86 @@
+.navbar_toggler {
+	width: 30px;
+	height: 22.5px;
+	position: relative;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.navbar_toggler span {
+	display: block;
+	position: absolute;
+	height: 4.5px;
+	width: 50%;
+	background: var(--color-white);
+	opacity: 1;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.navbar_toggler span:nth-child(even) {
+	left: 50%;
+	border-radius: 0 4.5px 4.5px 0;
+}
+
+.navbar_toggler span:nth-child(odd) {
+	left: 0px;
+	border-radius: 4.5px 0 0 4.5px;
+}
+
+.navbar_toggler span:nth-child(1),
+.navbar_toggler span:nth-child(2) {
+	top: 0px;
+}
+
+.navbar_toggler span:nth-child(3),
+.navbar_toggler span:nth-child(4) {
+	top: 9px;
+}
+
+.navbar_toggler span:nth-child(5),
+.navbar_toggler span:nth-child(6) {
+	top: 18px;
+}
+
+.navbar_toggler.active span:nth-child(1),
+.navbar_toggler.active span:nth-child(6) {
+	transform: rotate(45deg);
+}
+
+.navbar_toggler.active span:nth-child(2),
+.navbar_toggler.active span:nth-child(5) {
+	transform: rotate(-45deg);
+}
+
+.navbar_toggler.active span:nth-child(1) {
+	left: 2.5px;
+	top: 3.5px;
+}
+
+.navbar_toggler.active span:nth-child(2) {
+	left: calc(50% - 2.5px);
+	top: 3.5px;
+}
+
+.navbar_toggler.active span:nth-child(3) {
+	left: -50%;
+	opacity: 0;
+}
+
+.navbar_toggler.active span:nth-child(4) {
+	left: 100%;
+	opacity: 0;
+}
+
+.navbar_toggler.active span:nth-child(5) {
+	left: 2.5px;
+	top: 14.5px;
+}
+
+.navbar_toggler.active span:nth-child(6) {
+	left: calc(50% - 2.5px);
+	top: 14.5px;
+}
