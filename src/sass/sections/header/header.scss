@@ -27,7 +27,6 @@ header {
 			background: transparent;
 			gap: 3rem;
 
-
 			a {
 				text-decoration: none;
 				color: var(--color-white);
@@ -52,19 +51,22 @@ header {
 				flex-direction: column;
 				position: absolute;
 				width: 80%;
+				height: 100vh;
 				right: calc(-80% - 3em);
-				top: var(--nav-height);
+				top: 0;
 				backdrop-filter: blur(16px);
 				-webkit-backdrop-filter: blur(16px);
 				background-color: hsla(0, 0%, 35%, .1);
 				transition: right 0.5s;
 				border-radius: 10px;
 				padding: 3em;
+				margin: 0;
 
 				&.mobile {
 					display: flex;
 					right: calc(0% - 3em);
 					transition: right 0.5s;
+
 
 					li {
 						width: 100%;

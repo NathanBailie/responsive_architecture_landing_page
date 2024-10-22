@@ -1,0 +1,56 @@
+.swiper {
+	height: 100vh;
+
+	&-pagination {
+		width: initial;
+		height: max-content;
+		top: 6rem;
+		left: initial;
+		right: 4rem;
+		font-size: var(--big-font-size);
+		font-weight: var(--font-semi-bold);
+		display: flex;
+		column-gap: 0.25rem;
+		align-items: center;
+
+		&-total {
+			font-size: var(--normal-font-size);
+		}
+	}
+
+	&-navigation {
+		height: max-content;
+		position: absolute;
+		right: 1.5rem;
+		bottom: 4rem;
+		display: flex;
+		gap: 2.5rem;
+		z-index: var(--z-tooltip);
+	}
+
+	&-button-prev,
+	&-button-next {
+		width: 2.2rem;
+		height: 2.2rem;
+		position: initial;
+		outline: none;
+
+		&:after {
+			content: '',
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+
+			&:hover {
+				transform: scale(1.1);
+
+			}
+
+			&:active {
+				transform: scale(1)
+			}
+		}
+	}
+}

@@ -1,10 +1,13 @@
 @use "./helpers/variables.scss" as *;
 @use "./helpers/mixins.scss" as *;
+@use "./libs/swiper-bundle.min.css" as *;
 @use "./libs/normalize.min.css" as *;
 
 // sections
 @use "sections/header/header.scss" as *;
 @use "sections/header/hamburger.scss" as *;
+@use "sections/home/home.scss" as *;
+@use "sections/home/swiper.scss" as *;
 
 @font-face {
   font-family: 'Montserrat';
@@ -16,6 +19,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--color-white);
+  user-select: none;
 }
 
 body {

@@ -1,6 +1,7 @@
 :root {
 	// z-indexes
 	--z-header: 100;
+	--z-tooltip: 10;
 
 	// height
 	--nav-height: 3.5rem;
@@ -8,6 +9,12 @@
 	// colors
 	--color-white: white;
 	--color-black: black;
+
+	// font sizes
+	--biggest-font-size: 2rem;
+	--big-font-size: 1.5rem;
+	--middle-font-size: 1rem;
+	--normal-font-size: .938rem;
 
 	// font-weight
 	--font-regular: 400;
