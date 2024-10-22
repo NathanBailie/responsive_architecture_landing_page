@@ -4,17 +4,17 @@
 	&-pagination {
 		width: initial;
 		height: max-content;
-		top: 6rem;
+		top: 9rem;
 		left: initial;
-		right: 4rem;
-		font-size: var(--big-font-size);
+		right: 10rem;
+		font-size: var(--bigger-font-size);
 		font-weight: var(--font-semi-bold);
 		display: flex;
 		column-gap: 0.25rem;
 		align-items: center;
 
 		&-total {
-			font-size: var(--normal-font-size);
+			font-size: var(--middle-font-size);
 		}
 	}
 
@@ -51,6 +51,25 @@
 			&:active {
 				transform: scale(1)
 			}
+		}
+	}
+}
+
+@media(max-width: 1200px) {
+	.swiper {
+		&-pagination {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+@media(max-width: 800px) {
+	.swiper {
+		&-pagination {
+			font-size: 2rem;
+			top: 7rem;
+			left: initial;
+			right: 7rem;
 		}
 	}
 }

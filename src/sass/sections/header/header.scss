@@ -16,6 +16,7 @@ header {
 
 		&_logo {
 			color: var(--color-white);
+			font-size: var(--premiddle-font-size);
 			font-weight: var(--font-semi-bold);
 			text-decoration: none;
 		}
@@ -31,6 +32,7 @@ header {
 				text-decoration: none;
 				color: var(--color-white);
 				font-weight: var(--font-semi-bold);
+				font-size: var(--premiddle-font-size);
 
 				&:hover {
 					text-decoration: underline;
@@ -81,6 +83,16 @@ header {
 				display: block;
 				pointer-events: all;
 				opacity: 1;
+			}
+		}
+	}
+}
+
+@media(max-width: 500px) {
+	header {
+		.navbar {
+			&_menu {
+				padding: 0.5rem;
 			}
 		}
 	}
